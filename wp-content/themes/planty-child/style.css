@@ -1,0 +1,101 @@
+/*
+Theme Name: Planty Child
+Theme URI: http://underscores.me/
+Template: planty
+Author: Laury
+Author URI: http://underscores.me/
+Description: Boissons énergisantes � base de plantes.
+Tags: custom-background,custom-logo,custom-menu,featured-images,threaded-comments,translation-ready
+Version: 1.0.0.1668113022
+Updated: 2022-11-10 21:43:42
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap");
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  /* max-width: 1440px; */
+  font-family: "Syne", sans-serif;
+}
+
+/* Header */
+
+header.site-header {
+  display: flex;
+  margin-bottom: -100px;
+  background-color: white;
+  position: sticky;
+  z-index: 10;
+}
+
+header.site-header a.custom-logo-link {
+  width: 300px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header.site-header nav.main-navigation {
+  display: flex;
+  justify-content: end;
+  height: 100%;
+}
+
+header.site-header nav.main-navigation ul {
+  display: flex;
+}
+
+header.site-header nav.main-navigation a {
+  color: black;
+  padding: 30px 40px;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+}
+
+header.site-header nav.main-navigation li:last-child a {
+  color: white;
+  background-color: #dc9f96;
+  margin-left: 30px;
+  padding: 30px 60px;
+}
+
+@media screen and (max-width: 900px) {
+  header.site-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header.site-header .site-branding {
+    display: flex;
+    justify-content: center;
+  }
+
+  header.site-header nav.main-navigation {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  header.site-header nav.main-navigation ul {
+    flex-direction: column;
+  }
+
+  header.site-header nav.main-navigation li:last-child a {
+    margin-left: 0;
+  }
+}
+
+/* Footer */
+
+footer .site-info a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
