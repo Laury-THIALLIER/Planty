@@ -38,6 +38,6 @@
 				)
 			);
 			?>
-			<a class="commander" href="/commander">Commander</a>
+			<a class="commander" href="index.php/commander">Commander</a>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
