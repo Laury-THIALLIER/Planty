@@ -38,5 +38,6 @@
 				)
 			);
 			?>
+			<a class="commander" href="/commander">Commander</a>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

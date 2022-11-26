@@ -22,3 +22,12 @@ endif;
 add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 
 // END ENQUEUE PARENT ACTION
+
+function planty_admin_nav($items) {
+    if (is_user_logged_in()) {
+        $items .= '<li id="ongletAdmin" class="menuWhite"><a href="'. get_admin_url() .'">Admin</a></li>';
+    }
+    return $items;
+}
+
+add_filter('wp_nav_menu_items', 'planty_admin_nav');

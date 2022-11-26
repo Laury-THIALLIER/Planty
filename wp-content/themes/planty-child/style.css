@@ -57,7 +57,7 @@ header.site-header nav.main-navigation a {
   text-align: center;
 }
 
-header.site-header nav.main-navigation li:last-child a {
+header.site-header nav.main-navigation .commander {
   color: white;
   background-color: #dc9f96;
   margin-left: 30px;
@@ -76,16 +76,15 @@ header.site-header nav.main-navigation li:last-child a {
   }
 
   header.site-header nav.main-navigation {
+    flex-direction: column;
     justify-content: center;
   }
-}
 
-@media screen and (max-width: 570px) {
   header.site-header nav.main-navigation ul {
-    flex-direction: column;
+    justify-content: center;
   }
 
-  header.site-header nav.main-navigation li:last-child a {
+  header.site-header nav.main-navigation .commander {
     margin-left: 0;
   }
 }
