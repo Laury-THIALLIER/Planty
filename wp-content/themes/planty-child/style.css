@@ -97,7 +97,7 @@ header.site-header nav.main-navigation .commander {
   }
 }
 
-/* Nous rencontrer */
+/* Formulaires */
 
 .wpforms-field-label {
   font-family: "Syne", sans-serif;
@@ -115,6 +115,7 @@ div.wpforms-container-full .wpforms-form textarea {
   border-radius: 7px;
   border: 0;
   resize: none;
+  height: 50px;
 }
 
 .wpforms-submit-container {
@@ -132,6 +133,59 @@ div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
   font-size: 15px;
   font-weight: 400;
   border: 0;
+}
+
+#wpforms-form-203 .wpforms-field-label,
+#wpforms-form-264 .wpforms-field-label {
+  color: white !important;
+}
+
+.order-number {
+  height: 55px;
+  width: 100%;
+  text-align: center;
+}
+
+.elementor-element-c7d1fcd::before,
+.elementor-element-966fa32::before,
+.elementor-element-1bfcc33::before,
+.elementor-element-7863974::before {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #dc9f96;
+  width: 27px;
+  height: 27px;
+  font-size: 25px;
+  border-radius: 0 5px 0 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elementor-element-c7d1fcd::after,
+.elementor-element-966fa32::after,
+.elementor-element-1bfcc33::after,
+.elementor-element-7863974::after {
+  content: "-";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #dc9f96;
+  width: 27px;
+  height: 27px;
+  font-size: 25px;
+  border-radius: 0 0 5px 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="number"] {
+  border-radius: 5px;
 }
 
 /* Footer */
